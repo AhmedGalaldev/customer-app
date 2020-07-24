@@ -37,6 +37,7 @@ class CustomersController extends Controller
         event(new NewUserHasRegisteredEvent($customer));
 
 
+
         return redirect('customers');
     }
 
