@@ -9,7 +9,7 @@
    <div class="row">
        <div class="col-12">
          {{-- action="/customers/{{$customer->id}}" --}}
-            <form action="{{route('customers.edit',['customer',$customer])}}" method="POST" class="mb-5">
+            <form action="{{route('customers.update',['customer'=>$customer])}}" method="POST" class="mb-5" enctype="multipart/form-data">
                 @method('PATCH')
               @include('customers.form')
             </form>

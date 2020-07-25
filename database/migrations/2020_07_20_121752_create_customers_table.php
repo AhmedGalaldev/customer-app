@@ -19,6 +19,7 @@ class CreateCustomersTable extends Migration
             $table->unsignedBigInteger('company_id');
             $table->string('email');
             $table->integer('active');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

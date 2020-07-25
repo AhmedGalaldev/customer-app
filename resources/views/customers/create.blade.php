@@ -7,7 +7,7 @@
 @section('content')   
    <div class="row">
        <div class="col-12">
-            <form action="{{route('customers.store')}}" method="POST" class="mb-5">
+            <form action="{{route('customers.store')}}" method="POST" class="mb-5" enctype="multipart/form-data">
                 
               @include('customers.form')
             </form>

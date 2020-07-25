@@ -29,5 +29,10 @@
         @endforeach
     </select>
 </div>
+<div class="form-group">
+    <label for="image">Profile</label>
+    <br>
+    <input type="file" name="image" >
+</div>
 <button type="submit" class="btn btn-secondary">Submit</button>
 @csrf
